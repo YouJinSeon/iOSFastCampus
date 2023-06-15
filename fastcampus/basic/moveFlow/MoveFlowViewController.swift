@@ -32,14 +32,14 @@ class MoveFlowViewController: UIViewController, SendDataDelegate {
     
     @IBAction func tapCodePushButton(_ sender: Any) {
         guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") as? CodePushViewController else { return }
-        viewController.name = "Teddy"
+        viewController.name = "MoveFlowCodePush"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func tapCodePresentButton(_ sender: Any) {
         guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresentViewController") as? CodePresentViewController else { return }
         viewController.modalPresentationStyle = .fullScreen
-        viewController.name = "Teddy"
+        viewController.name = "MoveFlowCodePresent"
         viewController.delegate = self
         self.present(viewController, animated: true, completion: nil)
     }
@@ -54,7 +54,7 @@ class MoveFlowViewController: UIViewController, SendDataDelegate {
      */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? SuguePushViewController {
-            viewController.name = "Teddy"
+            viewController.name = "MoveFlowSugue"
         }
     }
     

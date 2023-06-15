@@ -20,12 +20,6 @@ class CodePushViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? CodePushViewController {
-            viewController.name = "Teddy"
-        }
-    }
-    
     @IBAction func backButtonClick(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
