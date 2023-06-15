@@ -52,32 +52,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nra-ik-U1h">
-                                <rect key="frame" x="139" y="365" width="117" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nra-ik-U1h">
+                                <rect key="frame" x="143" y="408" width="117" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
                                 <connections>
                                     <action selector="backButtonClick:" destination="Z8c-53-YvH" eventType="touchUpInside" id="gVu-Hq-wta"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="코드로 Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1P-eQ-yCa">
-                                <rect key="frame" x="154" y="225" width="87" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="코드로 Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1P-eQ-yCa">
+                                <rect key="frame" x="158" y="357" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="전달받은 데이터 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPk-RV-Fte">
-                                <rect key="frame" x="104" y="460" width="121" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="전달받은 데이터 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPk-RV-Fte">
+                                <rect key="frame" x="108" y="473" width="121" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7S-7b-HGf">
-                                <rect key="frame" x="239" y="460" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7S-7b-HGf">
+                                <rect key="frame" x="237" y="473" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -85,6 +81,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OfJ-Z0-qiu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nra-ik-U1h" firstAttribute="top" secondItem="k1P-eQ-yCa" secondAttribute="bottom" constant="30" id="Nmq-09-QRu"/>
+                            <constraint firstItem="BPk-RV-Fte" firstAttribute="leading" secondItem="OfJ-Z0-qiu" secondAttribute="leading" constant="104" id="XPf-tx-Jvb"/>
+                            <constraint firstItem="y7S-7b-HGf" firstAttribute="baseline" secondItem="BPk-RV-Fte" secondAttribute="baseline" id="fXF-wG-mcg"/>
+                            <constraint firstItem="Nra-ik-U1h" firstAttribute="centerX" secondItem="k1P-eQ-yCa" secondAttribute="centerX" id="hJw-ia-sLY"/>
+                            <constraint firstItem="Nra-ik-U1h" firstAttribute="leading" secondItem="OfJ-Z0-qiu" secondAttribute="leading" constant="139" id="lzx-AJ-U1P"/>
+                            <constraint firstItem="BPk-RV-Fte" firstAttribute="top" secondItem="Nra-ik-U1h" secondAttribute="bottom" constant="30" id="qaU-Qn-xxa"/>
+                            <constraint firstItem="y7S-7b-HGf" firstAttribute="leading" secondItem="BPk-RV-Fte" secondAttribute="trailing" constant="8" id="rCU-dd-Zxl"/>
+                            <constraint firstItem="Nra-ik-U1h" firstAttribute="top" secondItem="Gpd-gW-9ff" secondAttribute="top" constant="365" id="vc7-x6-Fda"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="y7S-7b-HGf" id="akW-uD-sPA"/>
@@ -102,32 +108,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="코드로 Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRi-Zc-er7">
-                                <rect key="frame" x="143" y="173" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkM-gw-pdy">
-                                <rect key="frame" x="138" y="409" width="117" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkM-gw-pdy">
+                                <rect key="frame" x="139" y="409" width="117" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
                                 <connections>
                                     <action selector="tapBackButton:" destination="NKs-4x-boT" eventType="touchUpInside" id="6gr-gY-pbM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="전달받은 데이터 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxE-Ec-J2j">
-                                <rect key="frame" x="103" y="506" width="121" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="전달받은 데이터 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxE-Ec-J2j">
+                                <rect key="frame" x="104" y="474" width="121" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NI-nT-3aU">
-                                <rect key="frame" x="232" y="506" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NI-nT-3aU">
+                                <rect key="frame" x="233" y="474" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="코드로 Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRi-Zc-er7">
+                                <rect key="frame" x="144" y="358" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -135,6 +137,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jg9-5c-MVh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4NI-nT-3aU" firstAttribute="leading" secondItem="zxE-Ec-J2j" secondAttribute="trailing" constant="8" id="I87-2X-1sM"/>
+                            <constraint firstItem="gRi-Zc-er7" firstAttribute="centerX" secondItem="kkM-gw-pdy" secondAttribute="centerX" id="JhU-Er-hbE"/>
+                            <constraint firstItem="kkM-gw-pdy" firstAttribute="top" secondItem="gRi-Zc-er7" secondAttribute="bottom" constant="30" id="NkW-1d-DBZ"/>
+                            <constraint firstItem="jg9-5c-MVh" firstAttribute="bottom" secondItem="zxE-Ec-J2j" secondAttribute="bottom" constant="291" id="Qr1-BK-YgS"/>
+                            <constraint firstItem="zxE-Ec-J2j" firstAttribute="leading" secondItem="jg9-5c-MVh" secondAttribute="leading" constant="103" id="d2r-Uk-NHv"/>
+                            <constraint firstItem="gRi-Zc-er7" firstAttribute="centerX" secondItem="fAu-4g-AXU" secondAttribute="centerX" id="n3A-Ej-fWl"/>
+                            <constraint firstItem="zxE-Ec-J2j" firstAttribute="top" secondItem="kkM-gw-pdy" secondAttribute="bottom" constant="30" id="oUd-KJ-zSb"/>
+                            <constraint firstItem="zxE-Ec-J2j" firstAttribute="baseline" secondItem="4NI-nT-3aU" secondAttribute="baseline" id="rDH-bv-dQ8"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="4NI-nT-3aU" id="Gg1-Ar-oBh"/>
@@ -241,47 +253,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rs3-l5-hDR">
-                                <rect key="frame" x="130" y="163" width="134" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rs3-l5-hDR">
+                                <rect key="frame" x="130" y="263" width="134" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sugue 로 Push"/>
                                 <connections>
                                     <segue destination="WUi-Ds-iM7" kind="show" id="GNB-zl-pin"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIQ-Mi-a7R">
-                                <rect key="frame" x="119" y="259" width="155" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIQ-Mi-a7R">
+                                <rect key="frame" x="119" y="359" width="156" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sugue 로 Present"/>
                                 <connections>
                                     <segue destination="Ioo-Hl-fRj" kind="presentation" modalPresentationStyle="fullScreen" id="oc7-xG-v3M"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-78-I9m">
-                                <rect key="frame" x="141" y="360" width="111" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-78-I9m">
+                                <rect key="frame" x="141.66666666666666" y="460" width="111" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="코드로 Push"/>
                                 <connections>
                                     <action selector="tapCodePushButton:" destination="lay-hu-bMJ" eventType="touchUpInside" id="Oit-Sd-9wn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLD-1n-31c">
-                                <rect key="frame" x="133" y="455" width="131" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLD-1n-31c">
+                                <rect key="frame" x="133" y="555" width="131" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="코드로 Present"/>
                                 <connections>
                                     <action selector="tapCodePresentButton:" destination="lay-hu-bMJ" eventType="touchUpInside" id="pLm-9C-m99"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="전달받은 데이터 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFC-z8-lae">
+                                <rect key="frame" x="113" y="646" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkw-48-sIE">
+                                <rect key="frame" x="242" y="646" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="saJ-XD-drU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oFC-z8-lae" firstAttribute="top" secondItem="ZLD-1n-31c" secondAttribute="bottom" constant="56" id="25l-oc-3og"/>
+                            <constraint firstItem="wIQ-Mi-a7R" firstAttribute="centerX" secondItem="rs3-l5-hDR" secondAttribute="centerX" id="8AT-r0-lZT"/>
+                            <constraint firstItem="ZLD-1n-31c" firstAttribute="trailing" secondItem="rs3-l5-hDR" secondAttribute="trailing" id="ImJ-Zw-87o"/>
+                            <constraint firstItem="oFC-z8-lae" firstAttribute="leading" secondItem="saJ-XD-drU" secondAttribute="leading" constant="119" id="UhR-Iy-W9n"/>
+                            <constraint firstItem="KYg-78-I9m" firstAttribute="top" secondItem="wIQ-Mi-a7R" secondAttribute="bottom" constant="66" id="ZTF-Ix-d8h"/>
+                            <constraint firstItem="wIQ-Mi-a7R" firstAttribute="top" secondItem="rs3-l5-hDR" secondAttribute="bottom" constant="61" id="cqs-V1-a8V"/>
+                            <constraint firstItem="ZLD-1n-31c" firstAttribute="leading" secondItem="saJ-XD-drU" secondAttribute="leading" constant="133" id="eMD-yy-NZz"/>
+                            <constraint firstItem="wIQ-Mi-a7R" firstAttribute="centerX" secondItem="KYg-78-I9m" secondAttribute="centerX" id="fDz-8y-f2f"/>
+                            <constraint firstItem="oFC-z8-lae" firstAttribute="leading" secondItem="wIQ-Mi-a7R" secondAttribute="leading" id="fpG-Cq-Zpa"/>
+                            <constraint firstItem="Fkw-48-sIE" firstAttribute="leading" secondItem="oFC-z8-lae" secondAttribute="trailing" constant="8" id="gjk-YQ-5jt"/>
+                            <constraint firstItem="Fkw-48-sIE" firstAttribute="baseline" secondItem="oFC-z8-lae" secondAttribute="baseline" id="lLq-gA-eOB"/>
+                            <constraint firstItem="wIQ-Mi-a7R" firstAttribute="top" secondItem="XCc-jv-4SM" secondAttribute="top" constant="359" id="opE-FV-DfM"/>
+                            <constraint firstItem="saJ-XD-drU" firstAttribute="bottom" secondItem="oFC-z8-lae" secondAttribute="bottom" constant="151" id="q0d-Js-Nfp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v4r-9d-Dhq"/>
+                    <connections>
+                        <outlet property="receiveData" destination="Fkw-48-sIE" id="PR5-9j-TsG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWv-vJ-hof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -296,14 +334,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sugue 로 Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTa-gB-A64">
-                                <rect key="frame" x="141" y="184" width="110" height="21"/>
+                                <rect key="frame" x="141" y="296" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FQ-LY-3lw">
-                                <rect key="frame" x="138" y="409" width="117" height="35"/>
+                                <rect key="frame" x="138" y="521" width="117" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
@@ -311,11 +349,28 @@
                                     <action selector="tapBackButton:" destination="WUi-Ds-iM7" eventType="touchUpInside" id="qAk-rC-VCb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="전달받은 데이터 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNZ-sJ-uMr">
+                                <rect key="frame" x="95" y="416" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ta-bg-aJe">
+                                <rect key="frame" x="233" y="416" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Sh-fY-7mo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bGK-L0-lTy"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="1Ta-bg-aJe" id="PJH-Hx-jtz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eF1-Hv-9M9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,14 +385,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sugue 로 Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuR-dV-FEl">
-                                <rect key="frame" x="131" y="175" width="131" height="21"/>
+                                <rect key="frame" x="131" y="294" width="131" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhY-kq-CEe">
-                                <rect key="frame" x="138" y="404" width="117" height="35"/>
+                                <rect key="frame" x="138" y="523" width="117" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>

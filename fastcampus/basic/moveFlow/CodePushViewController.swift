@@ -7,16 +7,10 @@
 
 import UIKit
 
-protocol SendDataDelegate: AnyObject {
-    func sendData(name: String)
-}
-
 class CodePushViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
     var name: String?
-    //delegate 변수는 weak 을 선언해야 메모리가 누수되지 않는다.
-    weak var delegate: SendDataDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +27,6 @@ class CodePushViewController: UIViewController {
     }
     
     @IBAction func backButtonClick(_ sender: Any) {
-        self.delegate?.sendData(name: "Teddy")
         self.navigationController?.popViewController(animated: true)
     }
 }
